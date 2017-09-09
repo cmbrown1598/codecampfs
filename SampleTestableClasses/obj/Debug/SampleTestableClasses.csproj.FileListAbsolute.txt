@@ -1,0 +1,5 @@
+C:\working\git\CodeCampFS\SampleTestableClasses\bin\Debug\SampleTestableClasses.dll
+C:\working\git\CodeCampFS\SampleTestableClasses\bin\Debug\SampleTestableClasses.pdb
+C:\working\git\CodeCampFS\SampleTestableClasses\obj\Debug\SampleTestableClasses.csproj.CoreCompileInputs.cache
+C:\working\git\CodeCampFS\SampleTestableClasses\obj\Debug\SampleTestableClasses.dll
+C:\working\git\CodeCampFS\SampleTestableClasses\obj\Debug\SampleTestableClasses.pdb
