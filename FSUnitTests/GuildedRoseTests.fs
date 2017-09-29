@@ -18,6 +18,13 @@ let toItem li =
     item.Quality <- li.Quality;
     item
 
+
+
+
+
+
+
+
 let sampleItem = { Name = item1; SellIn = 5; Quality = 5}
 
 [<Fact>]

@@ -4,28 +4,42 @@ open Xunit
 open System
 open SampleTestableClasses
 
+
+
+
+
 [<Fact>]
 let ``When value is passed to percentage it is multiplied by 100 and rounds to 8 decimal places``() = 
     let decimalValue = 1.0M
     Assert.Equal(ConversionExtensions.ToPercentageString(decimalValue), "100.00000000%")
+
+
+
 
 [<Fact>]
 let ``When null value is passed to percentage the default value is used``() = 
     let decimalValue = new Nullable<decimal>() 
     let defaultValue = new Nullable<decimal>(5.0M) 
     Assert.Equal(ConversionExtensions.ToPercentageString(decimalValue, defaultValue), "500.00000000%")
-        
+    
+    
+
+
 [<Fact>]
 let ``When null value is passed twice to percentage the default string is used``() = 
     let decimalValue = new Nullable<decimal>() 
     let defaultValue = new Nullable<decimal>() 
     Assert.Equal(ConversionExtensions.ToPercentageString(decimalValue, defaultValue), "")
 
+
+
 [<Fact>]
 let ``The default string can be overridden``() = 
     let decimalValue = new Nullable<decimal>() 
     let defaultValue = new Nullable<decimal>() 
     Assert.Equal(ConversionExtensions.ToPercentageString(decimalValue, defaultValue, "Superhero"), "Superhero")
+
+
 
 
 [<Fact>]
@@ -35,6 +49,11 @@ let ``This isn't particularly important, but is a wonderful example of mocking w
                         }
     disposable.Dispose()
     Assert.True(true)
+
+
+
+
+
 
 
 [<Fact>]
@@ -48,7 +67,15 @@ let ``Parser removes the Timezone text, and parses the date exactly.``() =
         Assert.True(a)
         Assert.Equal(b, expectedDate)
     List.iter testFunc successfulParses 
-        
+    
+    
+
+
+
+
+
+
+
 
 [<Fact>]
 let ``Parser cannot understand a date time without a timezone``() = 

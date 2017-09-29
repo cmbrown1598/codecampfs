@@ -57,6 +57,7 @@
     <Content Include="packages.config" />
     <Compile Include="ConversionTests.fs" />
     <Compile Include="GuildedRoseTests.fs" />
+    <Compile Include="DiTester.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
